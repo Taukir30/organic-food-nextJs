@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## OrganicFood — Grocery E-Commerce Platform
 
-## Getting Started
+# Live Site: https://organic-food-nextjs.vercel.app
 
-First, run the development server:
+OrganicFood is a full-stack grocery e-commerce web application built with Next.js on the frontend and Express.js + MongoDB on the backend.
+The platform allows users to browse products, create accounts, log in securely, add items to a cart, and place orders through a modern and responsive interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Project Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+OrganicFood is designed to simulate a real-world online grocery store.
+It focuses on clean UI, smooth navigation, and essential e-commerce functionality such as authentication, cart management, and order placement.
+The project demonstrates full-stack development skills using modern JavaScript technologies and RESTful API architecture.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Tech Stack
+   ## Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Next.js (App Router)
 
-## Learn More
+    React
 
-To learn more about Next.js, take a look at the following resources:
+    Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Client Components & Hooks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Backend
 
-## Deploy on Vercel
+    Node.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Express.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    MongoDB (Mongoose)
+
+    REST API
+
+    Deployment
+
+    Frontend: Vercel
+
+   ## Backend: Hosted separately (Express API)
+
+# Setup & Installation Instructions
+    1 .Clone the repository
+        git clone https://github.com/your-username/organicfood-nextjs.git
+        cd organicfood-nextjs
+    
+    2. Install frontend dependencies
+        npm install
+
+    3. Environment Variables
+        Create a .env.local file in the root directory and configure: NEXT_PUBLIC_API_URL=https://your-backend-api-url
+
+    4. Run the site
+        npm run dev
+
+# Route Summary
+    | Route            | Description                        |
+    | ---------------- | ---------------------------------- |
+    | `/`              | Home page                          |
+    | `/products`      | Product listing                    |
+    | `/products/[id]` | Product details                    |
+    | `/login`         | User login                         |
+    | `/add-product`   | Add new product (authorized users) |
+    | ---------------- | ---------------------------------- |
+
+# Implemented Features
+   1. Public product browsing
+
+   2. User registration & login
+
+   3. Product details page
+
+   4. Shopping cart functionality
+
+   5. Order placement
+
+   6. Responsive UI (mobile & desktop)
+
+   7. Backend REST API with MongoDB
+
+   8. Protected routes for authorized actions
+
+# Login Credentials
+    email: admin@example.com
+    Password: 123456
